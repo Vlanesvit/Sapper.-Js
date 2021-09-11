@@ -12,10 +12,40 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="game">
   <h1 class="header-title">Sapper</h1>
   
+
+  <form class="controls" action="#" method="get">
+
+    <div class="size">
+      <p class="width">
+        <input class="field-width" type="number" value="15" min="5" max="40" step="5" id="width">
+        <label class="label-width" for="width">Width</label>
+      </p>
+      <p class="height">
+        <input class="field-height" type="number" value="15" min="5" max="25" step="5" id="height">
+        <label class="label-height" for="height">Height</label>
+      </p>
+    </div>
+
+    <div class="difficulty">
+      <input class="skill" type="radio" name="difficulty" value="1" id="easy" checked="">
+      <label class="label" for="easy">Easy</label>
+
+      <input class="skill" type="radio" name="difficulty" value="1.5" id="average">
+      <label class="label" for="average">Average</label>
+
+      <input class="skill" type="radio" name="difficulty" value="2.5" id="hard">
+      <label class="label" for="hard">Hard</label>
+    </div>
+
+    <button class="restart" type="button">Restart</button>
+  </form>
+  
   <div id="app"></div>
+
+  <span class="author">by <a class="author-link" href="https://vk.com/vlanesvit">Vlad Nesterov</a></span>
 
   <!-- Connect Js-file -->
   <script src="js/core.js"></script>
@@ -23,3 +53,4 @@
 </body>
 
 </html>
+
